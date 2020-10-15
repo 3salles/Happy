@@ -106,7 +106,7 @@ The application will be avaible in `http://localhost:3000/`.
 
 ## 📄License
 
-[MIT](https://github.com/3salles/Happy/blob/main/LICENSE)
+This project uses [MIT](https://github.com/3salles/Happy/blob/main/LICENSE) lincense.
 
 ## 👩‍💻Author
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/3salles)](https://github.com/3salles)

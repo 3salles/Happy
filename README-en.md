@@ -20,95 +20,153 @@
 <!-- TABLE OF CONTENTS -->
 ## 🗂 Table of Contents
 
-* [About the Project](#ℹabout-the-project)
-  * [Layout](#🔖layout)
-  * [Desktop Version](#🖥desktop-version)
-  * [Technologies](#💻technologies)
-  * [Features](#💡features)
-* [Installation](#🏗installation)
-  * [Prerequisites](#🚧prerequisites)
-  * [Front-end](#💄front-end)
-    * [Installing Dependencies](#🚧installing-dependencies)
-    * [Setting Application](#🔧setting-application)
-    * [Running Application](#▶running-application)
-* [License](#📄license)
-* [Author](#👩‍💻author)
+* [About the Project](#book-about-the-project)
+  * [Layout](#art-layout)
+  * [Desktop Version](#desktop_computer-desktop-version)
+  * [Technologies](#computer-technologies)
+  * [Features](#bulb-features)
+* [Installation](#bricks-installation)
+  * [Prerequisites](#construction-prerequisites)
+  * [Front-end](#lipstick-front-end)
+    * [Installing Dependencies](#construction-installing-dependencies)
+    * [Setting Front-end](#wrench-setting-front-end)
+    * [Running Front-end](#arrow_forward-running-front-end)
+  * [Back-end](#file_cabinet-back-end)
+    * [Installing Dependencies](#construction-installing-dependencies)
+    * [Setting Back-end](#wrench-setting-back-end)
+    * [Running Back-end](#arrow_forward-running-back-end)
+* [License](#page_facing_up-license)
+* [Author](#woman_technologist-author)
 
-## ℹAbout The Project
+## :book: About The Project
+
 Happy is a website created in Next Level Week #3 powered by Rockeseat. This site connect people who want to visit orphanages.
 The application allows orphanages self register, informing opening hours, rules and location. And user can make a appointment to visit children and see the orphanages' location.
 
-## 🖥Desktop Version
+## :desktop_computer: Desktop Version
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/62452619/96150090-6f6fe780-0ee0-11eb-8106-7a21337c3f01.png" width="45%" /> 
   <img src="https://user-images.githubusercontent.com/62452619/96150156-80b8f400-0ee0-11eb-8f13-708be460cdde.png" width="45%"/>
 </p>
 
-### 🔖Layout
+### :art: Layout
+
 You can acess the project's layout in links below:
 
 * [Desktop](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web/duplicate)
 
 🚨 You need have a [Figma](https://www.figma.com) account to acess the layout.
 
-### 💻Technologies
+### :computer: Technologies
 
 * [TypeScript](https://www.typescriptlang.org)
 * [Node.js](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com)
 
-### 💡Features
+### :bulb: Features
+
   - [ ] Dark Mode
   - [ ] Mobile Version
 
-## 🏗Installation
+## :bricks: Installation
 
 This project use [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com), you will need them to build its dependencies.
 
-### 🚧Prerequisites
+### :construction: Prerequisites
+
 Clone this project repository:
+```bash
 
-`$ git clone https://github.com/3salles/Happy.git`
+$ git clone https://github.com/3salles/Happy.git
 
-Enter in `Happy` folder:
+#Enter in `Happy` folder:
 
-`$ cd Happy`
+$ cd Happy
+```
 
 🚨 If you don't have git in your machine, you can install it [here](https://git-scm.com/downloads).
 
-## 💄Front-end
-### 🚧Installing Dependencies
+## :lipstick: Front-end
+
+### :construction: Installing Dependencies
+
 In Happy folder, open `web` folder:
 
-`$ cd web`
+```bash
+$ cd web
 
-And install dependencies by the following command:
+# And install dependencies by the following command:
 
-`$ yarn install`
+$ yarn install
+```
 
-### 🔧Setting Application
+### :wrench: Setting Front-end
 
 To use [Mapbox](https://www.mapbox.com) you must have a Token acess. Create a account and take your token acess. Go to `OrphanagesMap.tsx` and change `REACT_APP_MAPBOX_TOKEN` with you token acess in the following line:
 
-```<TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />```
+```TypeScript
+<TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />
+```
 
-### ▶Running Application
+### :arrow_forward: Running Front-end
 
 Run the following comand to see the application:
 
-`yarn start`
+```bash
+$ yarn start
+```
 
-The application will be avaible in `http://localhost:3000/`.
+The application will be avaible on `http://localhost:3000/`.
 
-🚨 Remember to start the backend! See how to do clicking [here](#).
+🚨 Remember to start the backend!
+
+## :file_cabinet: Back-end
+
+### :construction: Instalando Dependências
+
+Inside Happy folder, open `backend` folder:
+
+```bash
+$ cd backend
+
+# Install dependencies woth following comand:
+
+$ yarn install
+```
+
+### :wrench: Setting Back-end
+
+Create database tables with following comand:
+
+```bash
+$ yarn typeorm migration:run
+``` 
+
+🚨 If you want to drop the database tables:
+
+```bash
+$ yarn typeorm migration:revert
+```
+
+### :arrow_forward: Running Back-end
+
+Run following comand to start back-end:
+
+```bash
+$ yarn dev
+```
+
+The Application will be avaible on `hattp://localhost:3333/`.
 
 
-## 📄License
+## :page_facing_up: License
 
 This project uses [MIT](https://github.com/3salles/Happy/blob/main/LICENSE) lincense.
 
-## 👩‍💻Author
+## :woman_technologist: Author
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/3salles)](https://github.com/3salles)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/beatriz-salles-b701a31a6)](https://www.linkedin.com/in/beatriz-salles-b701a31a6/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:beatrizsallesss@gmail.com)](mailto:beatrizsallesss@gmail.com)
+
+<p align="center">Developed with 💜 by Beatriz Salles</p>

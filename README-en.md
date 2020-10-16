@@ -4,7 +4,7 @@
 
 <br />
 <p align="center">
-  <img src="web/src/assets/logo.svg" alt="Logo">
+  <img src="https://user-images.githubusercontent.com/62452619/96209718-a7aa1100-0f46-11eb-8c38-062a575f4249.png" alt="Logo">
   <h3 align="center">Happy App</h3>
 
   <p align="center">

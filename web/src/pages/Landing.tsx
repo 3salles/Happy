@@ -16,8 +16,8 @@ function Landing() {
           <p>Visite orfanatos e mude o dia de muitas crianças.</p>
         </main>
         <div className="location">
-          <strong>Maranhão</strong>
-          <span>Raposa</span>
+          <strong>Raposa</strong>
+          <span>Maranhão</span>
         </div>
         <Link to="/app" className="enter-app">
           <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />

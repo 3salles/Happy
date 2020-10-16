@@ -1,36 +1,15 @@
 import React from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
-import L from 'leaflet';
-import { useHistory } from "react-router-dom";
-
-import { FiArrowLeft, FiPlus } from "react-icons/fi";
-
-import mapMarkerImg from '../assets/map-marker.svg';
+import { FiPlus } from "react-icons/fi";
 
 import '../styles/pages/create-orphanage.css';
-
-const happyMapIcon = L.icon({
-  iconUrl: mapMarkerImg,
-
-  iconSize: [45, 55],
-  iconAnchor: [22.5, 55],
-  popupAnchor: [0, -47]
-})
+import Sidebar from "../components/Sidebar";
+import mapIcon from "../utils/mapIcon";
 
 export default function CreateOrphanage() {
-  const { goBack } = useHistory();
-
   return (
     <div id="page-create-orphanage">
-      <aside>
-        <img src={mapMarkerImg} alt="Happy" />
-
-        <footer>
-          <button type="button" onClick={goBack}>
-            <FiArrowLeft size={24} color="#FFF" />
-          </button>
-        </footer>
-      </aside>
+      <Sidebar />
 
       <main>
         <form className="create-orphanage-form">
@@ -46,7 +25,7 @@ export default function CreateOrphanage() {
                 url={`https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
               />
 
-              <Marker interactive={false} icon={happyMapIcon} position={[-2.4480243,-44.1435415]} />
+              <Marker interactive={false} icon={mapIcon} position={[-2.4480243,-44.1435415]} />
             </Map>
 
             <div className="input-block">

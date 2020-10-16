@@ -31,6 +31,7 @@ interface OrphanageParams {
 export default function Orphanage() {
   const params = useParams<OrphanageParams>();
   const [orphanage, setOrphanage] = useState<Orphanage>();
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useEffect(() => {
     api.get(`orphanages/${params.id}`).then(response => {
@@ -48,12 +49,16 @@ export default function Orphanage() {
 
       <main>
         <div className="orphanage-details">
-          <img src={orphanage.images[1].url} alt={orphanage.name} />
+          <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
 
           <div className="images">
-            {orphanage.images.map(image => {
+            {orphanage.images.map((image, index )=> {
               return (
-                <button key={image.id} className="active" type="button" >
+                <button 
+                key={image.id} className={ activeImageIndex === index ? 'active' : ''} 
+                type="button" onClick={() =>{
+                  setActiveImageIndex(index);
+                }}>
                   <img src={image.url} alt={orphanage.name} />
                 </button>
               );
@@ -82,7 +87,7 @@ export default function Orphanage() {
               </Map>
 
               <footer>
-                <a href="">Ver rotas no Google Maps</a>
+                <a target="_blamk" rel="nopener noreferrer" href={`https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}`}>Ver rotas no Google Maps</a>
               </footer>
             </div>
 

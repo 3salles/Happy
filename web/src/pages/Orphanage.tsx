@@ -5,7 +5,7 @@ import { Map, Marker, TileLayer } from "react-leaflet";
 import { useHistory } from 'react-router-dom';
 import L from 'leaflet';
 
-import mapMarkerImg from '../images/map-marker.svg';
+import mapMarkerImg from '../assets/map-marker.svg';
 
 import '../styles/pages/orphanage.css';
 

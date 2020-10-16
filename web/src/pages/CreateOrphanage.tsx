@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 import { FiArrowLeft, FiPlus } from "react-icons/fi";
 
-import mapMarkerImg from '../images/map-marker.svg';
+import mapMarkerImg from '../assets/map-marker.svg';
 
 import '../styles/pages/create-orphanage.css';
 

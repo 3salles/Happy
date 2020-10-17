@@ -24,7 +24,7 @@
   * [Layout](#art-layout)
   * [Versão Desktop](#desktop_computer-versão-desktop)
   * [Tecnologias](#computer-tecnologias)
-  * [Recursos](#bulb-recursos)
+  * [Recursos](#sparkles-recursos)
 * [Instalação](#bricks-instalaçao)
   * [Pré-requisitos](#construction-pré-requisitos)
   * [Front-end](#lipstick-front-end)
@@ -66,11 +66,16 @@ Você pode encontrar o layout do projeto nos links abaixo:
 * [TypeORm](https://typeorm.io#/)
 * [SQLite](https://www.sqlite.org/index.html)
 
-### :bulb: Recursos
+### :sparkles: Recursos
 
-  - [ ] Modo Escuro
   - [ ] Versão para Celular
-
+  - [ ] Modo Escuro
+  - [ ] Popup estilizado de cadastro realizado com sucesso
+  - [ ] Adicionar o Shimmer Effect
+  - [ ] Adcionar botão excluir nas imagens adicionadas
+  - [ ] Integração do botão Whatsapp com o banco de dados
+  - [ ] Mudar cor do botão 'não' de cadastro de orfanato.
+  
 ## :bricks: Instalação
 
 Este projeto usa [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com), você precisa deles para construir as dependências dele.

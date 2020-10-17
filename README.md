@@ -64,7 +64,7 @@ imagens aqui
 Você pode encontrar o layout do projeto nos links abaixo:
 
 * [Desktop](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web/duplicate)
-* [Desktop](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile/duplicate)
+* [Mobile](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile/duplicate)
 
 🚨 Você precisa ter uma conta no  [Figma](https://www.figma.com) para aceessar aos layouts.
 

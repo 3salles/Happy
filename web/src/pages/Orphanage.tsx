@@ -41,7 +41,8 @@ export default function Orphanage() {
 
   if (!orphanage) {
     return <p>Carregando...</p>
-  }
+  } 
+  // Construir tela com Shimmer Effects
 
   return (
     <div id="page-orphanage">
@@ -52,13 +53,13 @@ export default function Orphanage() {
           <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
 
           <div className="images">
-            {orphanage.images.map((image, index )=> {
+            {orphanage.images.map((image, index) => {
               return (
-                <button 
-                key={image.id} className={ activeImageIndex === index ? 'active' : ''} 
-                type="button" onClick={() =>{
-                  setActiveImageIndex(index);
-                }}>
+                <button
+                  key={image.id} className={activeImageIndex === index ? 'active' : ''}
+                  type="button" onClick={() => {
+                    setActiveImageIndex(index);
+                  }}>
                   <img src={image.url} alt={orphanage.name} />
                 </button>
               );
@@ -105,18 +106,18 @@ export default function Orphanage() {
               {orphanage.open_on_weekends ? (
                 <div className="open-on-weekends">
                   <FiInfo size={32} color="#39CC83" />
-                Atendemos <br />
-                fim de semana
+                  Atendemos <br />
+                  fim de semana
                 </div>
               ) : (
                   <div className="open-on-weekends dont-open">
-                    <FiInfo size={32} color="#FF669D" />
-                Não Atendemos <br />
+                    <FiInfo size={32} color="#FF6690" />
+                Não atendemos <br />
                 fim de semana
                   </div>
                 )}
             </div>
-
+                {/* Criar link com banco de dados e link com o Whatsapp */}
             <button type="button" className="contact-button">
               <FaWhatsapp size={20} color="#FFF" />
               Entrar em contato

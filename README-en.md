@@ -24,7 +24,7 @@
   * [Layout](#art-layout)
   * [Desktop Version](#desktop_computer-desktop-version)
   * [Technologies](#computer-technologies)
-  * [Features](#bulb-features)
+  * [Features](#sparkles-features)
 * [Installation](#bricks-installation)
   * [Prerequisites](#construction-prerequisites)
   * [Front-end](#lipstick-front-end)
@@ -64,10 +64,15 @@ You can acess the project's layout in links below:
 * [Node.js](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com)
 
-### :bulb: Features
+### :sparkles: Features
 
-  - [ ] Dark Mode
   - [ ] Mobile Version
+  - [ ] Dark Mode
+  - [ ] Stylized popup of registration successfully completed
+  - [ ] Add Shimmer Effect
+  - [ ] Add delete button in uploaded images
+  - [ ] Integrate Whatsapp button with database.
+  - [ ] Change 'no' button color in orphanage register.
 
 ## :bricks: Installation
 

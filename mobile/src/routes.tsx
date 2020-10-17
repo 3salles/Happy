@@ -10,15 +10,29 @@ import Orphanage from './pages/Orphanage';
 import SelectMapPosition from './pages/CreateOrphanage/SelectMapPosition';
 import OrphanageData from './pages/CreateOrphanage/OrphanageData';
 
+import Header from './components/Header';
+
 
 export default function Routes() {
   return (
     <NavigationContainer>
-      <Navigator screenOptions={{ headerShown: false }}>
-        <Screen name="Orphanages Map" component={OrphanagesMap} />
-        <Screen name="Orphanage" component={Orphanage} />
-        <Screen name="SelectMapPosition" component={SelectMapPosition} />
-        <Screen name="OrphanageData" component={OrphanageData} />
+      <Navigator screenOptions={{ headerShown: false, cardStyle: { backgroundColor: '#f2f3f5' } }}>
+        <Screen name="OrphanagesMap" component={OrphanagesMap} />
+        <Screen name="Orphanage" 
+        component={Orphanage} options={{ 
+          headerShown:true,
+          header: () => <Header showCancel={false} title="Orfanato" />
+          }}/>
+        <Screen name="SelectMapPosition" 
+        component={SelectMapPosition} options={{
+          headerShown: true, 
+          header: () => <Header title="Selecione no mapa" />
+        }} />
+        <Screen name="OrphanageData" 
+        component={OrphanageData} options={{
+          headerShown: true, 
+          header: () => <Header title="Informe os dados" />
+        }}/>
       </Navigator>
     </NavigationContainer>
   );

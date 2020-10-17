@@ -24,6 +24,7 @@
 * [About the Project](#book-about-the-project)
   * [Layout](#art-layout)
   * [Desktop Version](#desktop_computer-desktop-version)
+  * [Mobile Version](#iphone-mobile-version)
   * [Technologies](#computer-technologies)
   * [Features](#sparkles-features)
 * [Installation](#bricks-installation)
@@ -36,6 +37,9 @@
     * [Installing Dependencies](#construction-installing-dependencies)
     * [Setting Back-end](#wrench-setting-back-end)
     * [Running Back-end](#arrow_forward-running-back-end)
+  * [Mobile](#iphone-back-end)
+    * [Installing Dependencies](#construction-installing-dependencies)
+    * [Running Mobile](#arrow_forward-running-mobile)
 * [License](#page_facing_up-license)
 * [Author](#woman_technologist-author)
 
@@ -51,11 +55,16 @@ The application allows orphanages self register, informing opening hours, rules 
   <img src="https://user-images.githubusercontent.com/62452619/96150156-80b8f400-0ee0-11eb-8f13-708be460cdde.png" width="45%"/>
 </p>
 
+### :iphone: Mobile Version
+
+images here
+
 ### :art: Layout
 
 You can acess the project's layout in links below:
 
 * [Desktop](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web/duplicate)
+* [Mobile](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile/duplicate)
 
 🚨 You need have a [Figma](https://www.figma.com) account to acess the layout.
 
@@ -169,6 +178,35 @@ $ yarn dev
 
 The Application will be avaible on `hattp://localhost:3333/`.
 
+## :iphone: Mobile
+
+This project uses [Expo](https://expo.io), install it before go to next step.
+
+### :construction: Installing Dependencies
+
+Inside Happy folder,open `mobile` folder:
+
+```bash
+$ cd mobile
+
+# Install dependencies with following comand:
+
+$ yarn install
+```
+
+### :arrow_forward: Running Mobile
+
+Run mobile with following comand:
+
+```bash
+$ expo start
+
+# If you want to use yarn:
+
+$ yarn start
+```
+
+The application will open a window in your browser. If you want to use your mobile to run the application, just use the QR code. If you want to run in your desktop, read how to use [android](https://docs.expo.io/workflow/android-studio-emulator/) emulator or [iOS](https://docs.expo.io/workflow/ios-simulator/) emulator.
 
 ## :page_facing_up: License
 

@@ -25,6 +25,7 @@
 * [Sobre o Projeto](#book-sobre-o-projeto)
   * [Layout](#art-layout)
   * [Versão Desktop](#desktop_computer-versão-desktop)
+  * [Versão Mobile](#iphone-versão-mobile)
   * [Tecnologias](#computer-tecnologias)
   * [Recursos](#sparkles-recursos)
 * [Instalação](#bricks-instalaçao)
@@ -37,6 +38,9 @@
     * [Instalando Dependências](#construction-instalando-dependências)
     * [Configurando o Back-end](#wrench-configurando-o-back-end)
     * [Rodando o Back-end](#arrow_forward-rodando-o-back-end)
+  * [Mobile](#iphone-back-end)
+    * [Instalando Dependências](#construction-instalando-dependências)
+    * [Rodando o Mobile](#arrow_forward-rodando-o-back-end)
 * [Licença](#page_facing_up-licença)
 * [Autora](#woman_technologist-autora)
 
@@ -51,11 +55,16 @@ Happy é um site criado durante a Next Level Week #3 da Rockeseat. Este site con
   <img src="https://user-images.githubusercontent.com/62452619/96150156-80b8f400-0ee0-11eb-8f13-708be460cdde.png" width="45%"/>
 </p>
 
+### :iphone: Versão Mobile
+
+imagens aqui
+
 ### :art: Layout
 
 Você pode encontrar o layout do projeto nos links abaixo:
 
 * [Desktop](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web/duplicate)
+* [Mobile](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile/duplicate)
 
 🚨 Você precisa ter uma conta no  [Figma](https://www.figma.com) para aceessar aos layouts.
 
@@ -68,6 +77,7 @@ Você pode encontrar o layout do projeto nos links abaixo:
 * [TypeORm](https://typeorm.io#/)
 * [SQLite](https://www.sqlite.org/index.html)
 * [Axios](https://www.npmjs.com/package/axios)
+* [Expo](https://expo.io)
 
 ### :sparkles: Recursos
 
@@ -168,6 +178,36 @@ Rode o seguinte comando para iniciar o back-end:
 $ yarn dev
 ```
 A aplicação estará disponível em `hattp://localhost:3333/`.
+
+## :iphone: Mobile
+
+Este projeto utiliza o [Expo](https://expo.io), instale-o antes de prosseguir.
+
+### :construction: Instalando Dependências
+
+Dentro da pasta Happy, abra a pasta `mobile`:
+
+```bash
+$ cd mobile
+
+# Instale as dependências com o seguinte comando:
+
+$ yarn install
+```
+
+### :arrow_forward: Rodando o Mobile
+
+Rode o seguinte comando para iniciar o mobile:
+
+```bash
+$ expo start
+
+# Caso queria usar o yarn
+
+$ yarn start
+```
+
+A aplicação abrirá uma janela no navegador. Caso queira rodar em seu celular, apenas scaneie o QR code. Se desejar rodar em seu computador, leia sobre como usar o emulador [android](https://docs.expo.io/workflow/android-studio-emulator/) ou emulador [iOS](https://docs.expo.io/workflow/ios-simulator/).
 
 ## :page_facing_up: Licença
 

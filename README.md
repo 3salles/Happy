@@ -55,7 +55,7 @@ Happy é um site criado durante a Next Level Week #3 da Rockeseat. Este site con
   <img src="https://user-images.githubusercontent.com/62452619/96150156-80b8f400-0ee0-11eb-8f13-708be460cdde.png" width="45%"/>
 </p>
 
-### :iphone: Versão MObile
+### :iphone: Versão Mobile
 
 imagens aqui
 

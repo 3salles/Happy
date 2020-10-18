@@ -24,8 +24,6 @@
 
 * [Sobre o Projeto](#book-sobre-o-projeto)
   * [Layout](#art-layout)
-  * [Versão Desktop](#desktop_computer-versão-desktop)
-  * [Versão Mobile](#iphone-versão-mobile)
   * [Tecnologias](#computer-tecnologias)
   * [Recursos](#sparkles-recursos)
 * [Instalação](#bricks-instalaçao)
@@ -48,16 +46,9 @@
 
 Happy é um site criado durante a Next Level Week #3 da Rockeseat. Este site conecta pessoas que querem visitar orfnatos. Esta aplicação permite que os orfanatos se registrem, informando horário de funcionamento, regras e localização. O usuário pode marcar um horário de visita e ver a localização dos orfanatos.
 
-### :desktop_computer: Versão Desktop
-
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/62452619/96150090-6f6fe780-0ee0-11eb-8106-7a21337c3f01.png" width="45%" /> 
-  <img src="https://user-images.githubusercontent.com/62452619/96150156-80b8f400-0ee0-11eb-8f13-708be460cdde.png" width="45%"/>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62452619/96357353-2df25e80-10d1-11eb-9e8f-2f2f8930bc2d.png" width="50%" alt="Landing page" /> 
 </p>
-
-### :iphone: Versão Mobile
-
-imagens aqui
 
 ### :art: Layout
 
@@ -74,6 +65,7 @@ Você pode encontrar o layout do projeto nos links abaixo:
 * [Node.js](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com)
 * [Express](https://expressjs.com)
+* [Mapbox](https://www.mapbox.com)
 * [TypeORm](https://typeorm.io#/)
 * [SQLite](https://www.sqlite.org/index.html)
 * [Axios](https://www.npmjs.com/package/axios)
@@ -162,11 +154,9 @@ Crie as tabelas do banco de dados com o seguinte comando:
 
 ```bash
 $ yarn typeorm migration:run
-``` 
 
-🚨 Caso queira destruir as tabelas do banco de dados:
+# Caso queira destruir as tabelas do banco de dados:
 
-```bash
 $ yarn typeorm migration:revert
 ```
 
@@ -177,7 +167,16 @@ Rode o seguinte comando para iniciar o back-end:
 ```bash
 $ yarn dev
 ```
-A aplicação estará disponível em `hattp://localhost:3333/`.
+A aplicação estará disponível em `http://localhost:3333/`.
+
+:warning: Altere o endereço da variável `LOCALHOST` para o endereço de sua rede no arquivo `images_views.ts`:
+
+```TypeScript
+    return {
+      id: image.id,
+      url: `http://LOCALHOST:3333/uploads/${image.path}`,
+    };
+```
 
 ## :iphone: Mobile
 
@@ -208,6 +207,8 @@ $ yarn start
 ```
 
 A aplicação abrirá uma janela no navegador. Caso queira rodar em seu celular, apenas scaneie o QR code. Se desejar rodar em seu computador, leia sobre como usar o emulador [android](https://docs.expo.io/workflow/android-studio-emulator/) ou emulador [iOS](https://docs.expo.io/workflow/ios-simulator/).
+
+🚨 Lembre de iniciar o backend!
 
 ## :page_facing_up: Licença
 

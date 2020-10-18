@@ -3,9 +3,10 @@
   <h3 align="center">Happy App</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Lincense&message=MIT&color=7159c1" alt="Lincense" />
+  <img src="https://img.shields.io/static/v1?label=Version&message=1.0&color=7159c1" alt="Version-1.0" />
   <img src="https://img.shields.io/static/v1?label=Desktop&message=Finished&color=brightgreen" alt="Desktop-finished" />
-  <img src="https://img.shields.io/static/v1?label=Mobile&message=Working&color=FF4500" alt="Mobile-working" />
+  <img src="https://img.shields.io/static/v1?label=Mobile&message=Finished&color=008000" alt="Mobile-finished" />
+  <img src="https://img.shields.io/static/v1?label=Lincense&message=MIT&color=0000ff " alt="Lincense" />
 </p>
 
 <p align="center">
@@ -74,7 +75,7 @@ You can acess the project's layout in links below:
 ### :sparkles: Features
 
   - [x] Desktop Version
-  - [ ] Mobile Version
+  - [x] Mobile Version
   - [ ] Dark Mode
   - [ ] Stylized popup of registration successfully completed
   - [ ] Add Shimmer Effect
@@ -207,7 +208,7 @@ $ expo start
 $ yarn start
 ```
 
-The application will open a window in your browser. If you want to use your mobile to run the application, just use the QR code. If you want to run in your desktop, read how to use [android](https://docs.expo.io/workflow/android-studio-emulator/) emulator or [iOS](https://docs.expo.io/workflow/ios-simulator/) emulator.
+The application will open a window in your browser. If you want to use your mobile to run the application, just use the QR code. If you want to run in your desktop, read how to use [Android](https://docs.expo.io/workflow/android-studio-emulator/) emulator or [iOS](https://docs.expo.io/workflow/ios-simulator/) emulator.
 
 ## :page_facing_up: License
 

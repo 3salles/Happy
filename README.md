@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# Happy
-Site created during Next Level Week #3 powered by Rocketseat.
-=======
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/62452619/96209718-a7aa1100-0f46-11eb-8c38-062a575f4249.png" alt="Logo">
   <h3 align="center">Happy App</h3>
@@ -229,4 +224,3 @@ Este projeto está sob a lincença [MIT](https://github.com/3salles/Happy/blob/m
 </p>
 
 <p align="center">Desenvolvido com 💜 por Beatriz Salles</p>
->>>>>>> 1.0

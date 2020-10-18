@@ -23,8 +23,6 @@
 
 * [About the Project](#book-about-the-project)
   * [Layout](#art-layout)
-  * [Desktop Version](#desktop_computer-desktop-version)
-  * [Mobile Version](#iphone-mobile-version)
   * [Technologies](#computer-technologies)
   * [Features](#sparkles-features)
 * [Installation](#bricks-installation)
@@ -48,16 +46,9 @@
 Happy is a website created in Next Level Week #3 powered by Rockeseat. This site connect people who want to visit orphanages.
 The application allows orphanages self register, informing opening hours, rules and location. And user can make a appointment to visit children and see the orphanages' location.
 
-## :desktop_computer: Desktop Version
-
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/62452619/96150090-6f6fe780-0ee0-11eb-8106-7a21337c3f01.png" width="45%" /> 
-  <img src="https://user-images.githubusercontent.com/62452619/96150156-80b8f400-0ee0-11eb-8f13-708be460cdde.png" width="45%"/>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62452619/96357353-2df25e80-10d1-11eb-9e8f-2f2f8930bc2d.png" width="50%" alt="Landing page" /> 
 </p>
-
-### :iphone: Mobile Version
-
-images here
 
 ### :art: Layout
 
@@ -73,9 +64,12 @@ You can acess the project's layout in links below:
 * [TypeScript](https://www.typescriptlang.org)
 * [Node.js](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com)
+* [Express](https://expressjs.com)
+* [Mapbox](https://www.mapbox.com)
 * [TypeORm](https://typeorm.io#/)
 * [SQLite](https://www.sqlite.org/index.html)
 * [Axios](https://www.npmjs.com/package/axios)
+* [Expo](https://expo.io)
 
 ### :sparkles: Features
 
@@ -160,11 +154,9 @@ Create database tables with following comand:
 
 ```bash
 $ yarn typeorm migration:run
-``` 
 
-🚨 If you want to drop the database tables:
+# If you want to drop the database tables:
 
-```bash
 $ yarn typeorm migration:revert
 ```
 
@@ -176,7 +168,16 @@ Run following comand to start back-end:
 $ yarn dev
 ```
 
-The Application will be avaible on `hattp://localhost:3333/`.
+The Application will be avaible on `http://localhost:3333/`.
+
+:warning: Modify `LOCALHOST` variable address to  your network address in `images_views.ts` archive:
+
+```TypeScript
+    return {
+      id: image.id,
+      url: `http://LOCALHOST:3333/uploads/${image.path}`,
+    };
+```
 
 ## :iphone: Mobile
 

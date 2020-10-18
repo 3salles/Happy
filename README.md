@@ -4,9 +4,11 @@
   <h3 align="center">Happy App</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Lincense&message=MIT&color=7159c1" alt="Lincense" />
+  <img src="https://img.shields.io/static/v1?label=Version&message=1.0&color=7159c1" alt="Version-1.0" />
   <img src="https://img.shields.io/static/v1?label=Desktop&message=Finished&color=brightgreen" alt="Desktop-finished" />
-  <img src="https://img.shields.io/static/v1?label=Mobile&message=Working&color=FF4500" alt="Mobile-working" />
+  <img src="https://img.shields.io/static/v1?label=Mobile&message=Finished&color=008000" alt="Mobile-finished" />
+  <img src="https://img.shields.io/static/v1?label=Lincense&message=MIT&color=0000ff " alt="Lincense" />
+  
 </p>
 
   <p align="center">
@@ -57,7 +59,7 @@ Você pode encontrar o layout do projeto nos links abaixo:
 * [Desktop](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web/duplicate)
 * [Mobile](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile/duplicate)
 
-🚨 Você precisa ter uma conta no  [Figma](https://www.figma.com) para aceessar aos layouts.
+🚨 Você precisa ter uma conta no  [Figma](https://www.figma.com) para acessar aos layouts.
 
 ### :computer: Tecnologias
 
@@ -74,7 +76,7 @@ Você pode encontrar o layout do projeto nos links abaixo:
 ### :sparkles: Recursos
 
   - [x] Versão Desktop
-  - [ ] Versão para Celular
+  - [x] Versão para Celular
   - [ ] Modo Escuro
   - [ ] Popup estilizado de cadastro realizado com sucesso
   - [ ] Adicionar o Shimmer Effect
@@ -206,7 +208,7 @@ $ expo start
 $ yarn start
 ```
 
-A aplicação abrirá uma janela no navegador. Caso queira rodar em seu celular, apenas scaneie o QR code. Se desejar rodar em seu computador, leia sobre como usar o emulador [android](https://docs.expo.io/workflow/android-studio-emulator/) ou emulador [iOS](https://docs.expo.io/workflow/ios-simulator/).
+A aplicação abrirá uma janela no navegador. Caso queira rodar em seu celular, apenas scaneie o QR code. Se desejar rodar em seu computador, leia sobre como usar o emulador [Android](https://docs.expo.io/workflow/android-studio-emulator/) ou emulador [iOS](https://docs.expo.io/workflow/ios-simulator/).
 
 🚨 Lembre de iniciar o backend!
 

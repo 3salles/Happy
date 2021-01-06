@@ -14,9 +14,9 @@
     Site desenvolvido durante a Next Level Week #3 da Rockectseat.
     <br />
     <br />
-    <a href="README-en.md">🇺🇸Inglês</a>
+    <a href="README.md">🇺🇸Inglês</a>
     ·
-    <a href="README.md">🇧🇷Português</a>
+    <a href="README-pt.md">🇧🇷Português</a>
   </p>
 </p>
 
